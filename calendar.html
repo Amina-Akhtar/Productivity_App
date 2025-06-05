@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+    />
+    <link
+      rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="calender.css" />
+    <title>Calendar</title>
+
+    <script>
+      // Function to remove the div 
+      function removeHiddenDiv() {
+        var body = document.body;  
+        var targetDiv = body.lastElementChild;   
+        
+        if (targetDiv.style.position === "absolute" &&
+           targetDiv.style.right === "0px") {
+              
+          targetDiv.remove(); 
+        } 
+      }
+    </script>
+  </head>
+  <body>
+    <label class="hamburger-menu">
+      <input type="checkbox" />
+    </label>
+    <aside class="sidebar">
+      <nav>
+        <div> <a href="dashboard.html">
+          <li><img src="./images/home.svg" alt="Home"> Home</li>
+      </a>
+  </div>
+        <div><a href="calendar.html">
+          <li><img src="./images/calender.svg" alt="Calender">Calender</li>
+        </a>
+      </div>
+        <div><a href="Timer.html">
+          <li><img src="./images/timer.svg" alt="Timer">Timer</li>
+      </a>
+    </div>
+        <div><a href="todolist.html">
+          <li><img src="./images/todolist.svg" alt="todolist">To Do List</li>
+      </a>
+  </div>
+  <div>
+      <a href="dashboard.html">
+          <li><img src="./images/setting.svg" alt="Settings">Settings</li>
+      </a>
+  </div>
+      </nav>
+    </aside>
+    <div class="container" style="width: 93%; margin-left: 5%; height: -60%;" >
+      <div class="left" style="width: 70%;">
+        <div class="calendar " style="margin-top: 1%; margin-bottom: 5%;">
+          <div class="month" style="margin-bottom: -10%;">
+            <i class="fas fa-angle-left prev"></i>
+            <div class="date">december 2015</div>
+            <i class="fas fa-angle-right next"></i>
+          </div>
+          <div class="weekdays">
+            <div>Sun</div>
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+          </div>
+          <div class="days"></div>
+          <div class="goto-today">
+            <div class="goto">
+              <input type="text" placeholder="mm/yyyy" class="date-input" />
+              <button class="goto-btn">Go</button>
+            </div>
+            <button class="today-btn" style="margin-top: 20px;">Today</button>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="today-date">
+          <div class="event-day">wed</div>
+          <div class="event-date">12th december 2022</div>
+        </div>
+        <div class="events"></div>
+        <div class="add-event-wrapper">
+          <div class="add-event-header">
+            <div class="title">Add Event</div>
+            <i class="fas fa-times close"></i>
+          </div>
+          <div class="add-event-body">
+            <div class="add-event-input">
+              <input type="text" placeholder="Event Name" class="event-name" />
+            </div>
+            <div class="add-event-input">
+              <input
+                type="text"
+                placeholder="Event Time From"
+                class="event-time-from"
+              />
+            </div>
+            <div class="add-event-input">
+              <input
+                type="text"
+                placeholder="Event Time To"
+                class="event-time-to"
+              />
+            </div>
+          </div>
+          <div class="add-event-footer">
+            <button class="add-event-btn">Add Event</button>
+          </div>
+        </div>
+      </div>
+      <button class="add-event">
+        <i class="fas fa-plus"></i>
+      </button>
+    </div>
+    <body onload="removeHiddenDiv()">
+      <!-- Page content -->
+       <div></div>
+         <!-- Div to remove -->
+         <div style="position: absolute; bottom: 0px; right: 0px; font-size: 10px; color: rgb(204, 204, 204); font-family: sans-serif; padding: 5px; background: rgb(255, 255, 255); border-top-left-radius: 5px; border-bottom-right-radius: 5px; box-shadow: rgb(204, 204, 204) 0px 0px 5px;">
+      </div>
+  
+    </body>
+    <script src="calender.js"></script>
+  </body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in & Sign up </title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="box" style="max-height: 100vh; min-width: 100vh;">
+        <div class="inner-box" style="height: 90vh;">
+          <div class="forms-wrap" style="height: 100vh; margin-top: -5%;">
+            <form action="dashboard.html" autocomplete="off" class="sign-in-form" >
+              <div class="logos">
+                <img src="imagess/logos.png" /><h6>TrakTivity</h6>
+              </div>
+
+              <div class="heading" style="margin-top: -25%;">
+                <h1>Get Productive</h1>
+              </div>
+
+              <div class="actual-form" style="max-height: 30vh;">
+                <div class="input-wrap " style="margin-top: -20%; color: lightgray;">
+                  <input
+                    type="text"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                    id="signInNameInput"
+                    />
+                  <label for="signInNameInput">Name</label>
+                </div>
+
+                <div class="input-wrap">
+                  <input
+                    type="password"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                    id="signInPasswordInput"
+                    />
+                  <label for="signInPasswordInput">Password</label>
+                  <p class="text" style="margin-top: 5%; margin-bottom: -40%;">
+                    <a href="#">Forgot Password?</a> 
+                    </p>
+                </div>
+               
+                <!-- Sign in button (should take to dashboard page) -->
+                <input type="submit" value="Sign In" class="sign-btn"  style="margin-top: 20%;"/>
+                <div class="heading">
+                  <h6>Not registred yet?</h6>
+                  <a href="#" class="toggle">Sign up</a>
+                </div>
+              </div>
+            </form>
+
+            <form action="sign-up sign-in.html" autocomplete="off" class="sign-up-form" >
+              <div class="logos">
+                <img src="imagess/logos.png" style="height:50px"/><h6>TrakTivity</h6>
+              </div>
+              <div class="heading" style="margin-top: -10%; margin-bottom: -5%;"> 
+                 <h1>Get Started</h1>
+
+                <h6>Already have an account?</h6>
+                <!-- takes to sign in page-->
+                <a href="#" class="toggle">Sign in</a>
+              </div>
+
+              <div class="actual-form">
+                <div class="input-wrap">
+                  <input
+                    type="text"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                    id="nameInput"
+                    />
+                  <label for="nameInput">Name</label>
+                </div>
+
+                <div class="input-wrap">
+                  <input
+                    type="email"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                    id="emailInput"
+                    />
+                  <label for="emailInput">Email</label>
+                </div>
+
+                <div class="input-wrap">
+                  <input
+                    type="password"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                    id="passwordInput"
+                    />
+                  <label for="passwordInput">Password</label>
+                </div>
+                 <!--Sign Up-> should take to sign in page  --> 
+                <input type="submit" value="Sign Up" class="sign-btn" />
+
+                <p class="text">
+                  By signing up, I agree to the
+                  <a href="#">Terms of Services</a> and
+                  <a href="#">Privacy Policy</a>
+                </p>
+              </div>
+            </form>
+          </div>
+
+          <div class="carousel">
+            <div class="images-wrapper">
+              <img src="imagess/fin1.1.png" class="images img-1" style="height:460px;" />
+              <img src="imagess/poi.png" class="images img-2" style="height:460px;" />
+              <img src="imagess/neww3.png" class="images img-3"  />
+            </div>
+
+            <div class="text-slider">
+              <div class="text-wrap">
+                <div class="text-group">
+                  <h2>Manage your tasks</h2>
+                  <h2>Organize your day</h2>
+                  <h2>Time your tasks</h2>
+                </div>
+              </div>
+
+              <div class="bullets">
+                <span class="active" data-value="1"></span>
+                <span data-value="2"></span>
+                <span data-value="3"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Javascript file -->
+
+    <script src="app.js"></script>
+  </body>
+</html>

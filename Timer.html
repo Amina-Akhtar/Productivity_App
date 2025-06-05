@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title> 
+    <link rel="stylesheet" href="Timer.css">
+  </head>
+  <body>
+    <label class="hamburger-menu">
+        <input type="checkbox" />
+      </label>
+      <aside class="sidebar">
+        <nav>
+          <div> <a href="dashboard.html">
+            <li><img src="./images/home.svg" alt="Home"> Home</li>
+        </a>
+    </div>
+          <div><a href="calendar.html">
+            <li><img src="./images/calender.svg" alt="Calender">Calender</li>
+          </a>
+        </div>
+          <div><a href="Timer.html">
+            <li><img src="./images/timer.svg" alt="Timer">Timer</li>
+        </a>
+      </div>
+          <div><a href="todolist.html">
+            <li><img src="./images/todolist.svg" alt="todolist">To Do List</li>
+        </a>
+    </div>
+    <div>
+        <a href="dashboard.html">
+            <li><img src="./images/setting.svg" alt="Settings">Settings</li>
+        </a>
+    </div>
+        </nav>
+      </aside> 
+      <h1>Timer</h1>
+      <div class="main-container center">
+        <!--progress indicator-->
+        <div class="circle-container center">
+          <div class="semicircle"></div>
+          <div class="semicircle"></div>
+          <div class="semicircle"></div>
+          <div class="outermost-circle"></div>
+          
+        </div>
+        
+        
+        
+        <!--timer-->
+        
+        <div class="timer-container center">
+          <div class="timer center"></div>
+          
+        </div>
+       
+      </div>
+      <div class="input-section">
+        <input type="text" placeholder="HH:MM:SS" >
+      </div>
+      <script src="Timer.js"></script>
+  </body>
+</html>
